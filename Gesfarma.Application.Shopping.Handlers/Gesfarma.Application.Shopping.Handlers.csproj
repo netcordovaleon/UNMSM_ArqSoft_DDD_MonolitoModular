@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator.NHibernate" Version="1.0.0.17" />
+    <PackageReference Include="NServiceBus" Version="8.1.6" />
+    <PackageReference Include="NServiceBus.Extensions.Hosting" Version="2.0.0" />
+    <PackageReference Include="NServiceBus.MicrosoftLogging.Hosting" Version="1.4.0" />
+    <PackageReference Include="NServiceBus.NHibernate" Version="9.0.2" />
+    <PackageReference Include="NServiceBus.RabbitMQ" Version="8.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gesfarma.Application.Shopping.Message\Gesfarma.Application.Shopping.Message.csproj" />
+    <ProjectReference Include="..\Gesfarma.Domain\Gesfarma.Domain.csproj" />
+    <ProjectReference Include="..\Gesfarma.Infrastructure\Gesfarma.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+
+</Project>

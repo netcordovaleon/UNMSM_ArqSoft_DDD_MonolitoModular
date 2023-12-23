@@ -1,0 +1,48 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:54025",
+      "sslPort": 44379
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5137",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SQL_CONNECTION": "Server=localhost\\SQLEXPRESS;Database=Gesfarma;Integrated Security=true;TrustServerCertificate=true;",
+        "RABBITMQ_DDD": "amqps://uvxqnobb:UYewpGtjux7ezOBgdCSJpn9S_iCoDajJ@jackal.rmq.cloudamqp.com/uvxqnobb"
+
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7086;http://localhost:5137",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SQL_CONNECTION": "Server=localhost\\SQLEXPRESS;Database=Gesfarma;Integrated Security=true;TrustServerCertificate=true;",
+        "RABBITMQ_DDD": "amqps://uvxqnobb:UYewpGtjux7ezOBgdCSJpn9S_iCoDajJ@jackal.rmq.cloudamqp.com/uvxqnobb"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SQL_CONNECTION": "Server=localhost\\SQLEXPRESS;Database=Gesfarma;Integrated Security=true;TrustServerCertificate=true;",
+        "RABBITMQ_DDD": "amqps://uvxqnobb:UYewpGtjux7ezOBgdCSJpn9S_iCoDajJ@jackal.rmq.cloudamqp.com/uvxqnobb"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Persistence\Migrations\InitialScript.sql" />
+    <None Remove="Persistence\Migrations\InsertClients.sql" />
+    <None Remove="Persistence\Migrations\InsertProducts.sql" />
+    <None Remove="Persistence\Migrations\OutboxTable.sql" />
+    <None Remove="Persistence\Migrations\SagaTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Persistence\Migrations\SagaTable.sql" />
+    <EmbeddedResource Include="Persistence\Migrations\OutboxTable.sql" />
+    <EmbeddedResource Include="Persistence\Migrations\InsertProducts.sql" />
+    <EmbeddedResource Include="Persistence\Migrations\InsertClients.sql" />
+    <EmbeddedResource Include="Persistence\Migrations\InitialScript.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="5.0.0" />
+    <PackageReference Include="FluentMigrator.Runner" Version="5.0.0" />
+    <PackageReference Include="FluentMigrator.Runner.SqlServer" Version="5.0.0" />
+    <PackageReference Include="FluentNHibernate" Version="3.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NHibernate" Version="5.4.7" />
+    <PackageReference Include="NServiceBus" Version="8.1.6" />
+    <PackageReference Include="NServiceBus.NHibernate" Version="9.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gesfarma.Domain\Gesfarma.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
